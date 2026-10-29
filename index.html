@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Sample Layout: Author Website for a Self-Worth Book</title>
+<style>
+:root{--ink:#2a2335;--muted:#6a6275;--brand:#6b3fa0;--accent:#f08a5d;--bg:#fbf6f1;--line:#ece4dc}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+.serif{font-family:Georgia,'Times New Roman',serif}
+.banner{background:#ffd900;color:#000;text-align:center;font-weight:700;padding:10px 14px;font-size:15px;position:sticky;top:0;z-index:10}
+.ph{background:#fff3b0;border:1px dashed #b38f00;padding:0 4px;border-radius:3px;color:#000}
+header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;padding:18px 7%;border-bottom:1px solid var(--line)}
+.logo{font-family:Georgia,serif;font-weight:700;font-size:22px;color:var(--brand)}
+nav a{margin-left:18px;color:var(--ink);text-decoration:none;font-size:15px}
+.hero{display:grid;grid-template-columns:1fr 280px;gap:48px;align-items:center;padding:72px 7%;background:linear-gradient(135deg,#fbf6f1,#f3ebfa)}
+.hero h1{font-family:Georgia,serif;font-size:46px;line-height:1.12;margin:0 0 14px}
+.hero p{font-size:19px;color:var(--muted);max-width:600px;margin:0}
+.cover{aspect-ratio:2/3;border-radius:6px;background:repeating-linear-gradient(45deg,#e6dcef,#e6dcef 12px,#f1eaf6 12px,#f1eaf6 24px);display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);font-weight:600;padding:20px;box-shadow:8px 10px 24px rgba(60,30,90,.18)}
+.btn{display:inline-block;background:var(--brand);color:#fff;font-weight:600;padding:12px 22px;border-radius:999px;text-decoration:none;margin:22px 10px 0 0;font-size:15px}
+.btn.alt{background:var(--accent)}.btn.ghost{background:transparent;color:var(--brand);border:2px solid var(--brand)}
+section{padding:64px 7%}section.soft{background:var(--bg)}
+h2{font-family:Georgia,serif;font-size:32px;margin:0 0 6px}.sub{color:var(--muted);margin:0 0 30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px}.card h3{margin:6px 0;font-size:20px}
+.tag{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--accent);font-weight:700}
+.quiz{max-width:680px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px}
+.q{margin:0 0 18px}.q b{display:block;margin-bottom:8px}.scale{display:flex;gap:8px;flex-wrap:wrap}
+.scale span{border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:14px;color:var(--muted)}
+.portrait{width:200px;height:200px;border-radius:50%;background:repeating-linear-gradient(45deg,#e6dcef,#e6dcef 12px,#f1eaf6 12px,#f1eaf6 24px);display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);font-weight:600;padding:18px;flex-shrink:0}
+.about{display:flex;gap:36px;align-items:center;flex-wrap:wrap}
+form{display:grid;gap:12px;max-width:520px}input,textarea{font:inherit;padding:12px;border:1px solid var(--line);border-radius:8px}
+footer{padding:28px 7%;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+@media(max-width:760px){.hero{grid-template-columns:1fr}.hero h1{font-size:34px}.cover{max-width:220px}nav a{margin:0 14px 0 0}}
+</style>
+</head>
+<body>
+<div class="banner">Sample layout for an Upwork proposal. Placeholder text only, not a real author or book.</div>
+<header>
+  <div class="logo"><span class="ph">[Author Name]</span></div>
+  <nav><a href="#home">Home</a><a href="#about">About</a><a href="#book">Book</a><a href="#assessment">Worth Assessment</a><a href="#resources">Resources</a><a href="#contact">Contact</a></nav>
+</header>
+
+<div class="hero" id="home">
+  <div>
+    <div class="tag">Coming soon</div>
+    <h1><span class="ph">[Book Title]</span><br>You are worth more than you think.</h1>
+    <p><span class="ph">[One or two sentences in your own words about stepping into your self-worth and who this book is for.]</span></p>
+    <a class="btn alt" href="#book">Pre-order the book</a><a class="btn ghost" href="#assessment">Take the Worth Assessment</a>
+  </div>
+  <div class="cover">[Book cover image]</div>
+</div>
+
+<section id="book">
+  <h2>The Book</h2>
+  <p class="sub">A short, encouraging overview with a clear pre-order button.</p>
+  <div class="grid">
+    <div class="card"><div class="tag">Inside</div><h3><span class="ph">[Theme 1]</span></h3><p><span class="ph">[Short description from your manuscript]</span></p></div>
+    <div class="card"><div class="tag">Inside</div><h3><span class="ph">[Theme 2]</span></h3><p><span class="ph">[Short description from your manuscript]</span></p></div>
+    <div class="card"><div class="tag">Inside</div><h3><span class="ph">[Theme 3]</span></h3><p><span class="ph">[Short description from your manuscript]</span></p></div>
+  </div>
+  <a class="btn alt" href="#book">Pre-order <span class="ph">[retailer or your own shop link]</span></a>
+</section>
+
+<section class="soft" id="assessment">
+  <h2>Worth Assessment</h2>
+  <p class="sub">A short self-check visitors can take, then a nudge toward the book. Questions below are placeholders.</p>
+  <div class="quiz">
+    <div class="q"><b>1. <span class="ph">[Your question]</span></b><div class="scale"><span>Rarely</span><span>Sometimes</span><span>Often</span><span>Always</span></div></div>
+    <div class="q"><b>2. <span class="ph">[Your question]</span></b><div class="scale"><span>Rarely</span><span>Sometimes</span><span>Often</span><span>Always</span></div></div>
+    <div class="q"><b>3. <span class="ph">[Your question]</span></b><div class="scale"><span>Rarely</span><span>Sometimes</span><span>Often</span><span>Always</span></div></div>
+    <p style="color:var(--muted);margin:0"><span class="ph">[Result message you write, with a link to the book]</span></p>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About the Author</h2>
+  <div class="about">
+    <div class="portrait">[Your photo]</div>
+    <p style="max-width:620px"><span class="ph">[Your bio in your own words: who you are, why you wrote this book, and who you hope it helps.]</span></p>
+  </div>
+</section>
+
+<section class="soft" id="resources">
+  <h2>Resources</h2>
+  <p class="sub">Free worksheets, links, or reading lists you choose to share.</p>
+  <div class="grid">
+    <div class="card"><div class="tag">Download</div><h3><span class="ph">[Resource 1]</span></h3></div>
+    <div class="card"><div class="tag">Link</div><h3><span class="ph">[Resource 2]</span></h3></div>
+    <div class="card"><div class="tag">Later</div><h3>Shop page</h3><p>Added when you're ready to sell merchandise or signed copies.</p></div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p class="sub">A simple form that sends messages to your email. No address is shown on the page.</p>
+  <form onsubmit="return false"><input placeholder="Name"><input placeholder="Email"><textarea rows="4" placeholder="Message"></textarea><button class="btn" style="border:0;cursor:pointer">Send (sample only)</button></form>
+</section>
+<footer>Sample layout only. Final site would be built in Squarespace with your own content.</footer>
+</body>
+</html>
